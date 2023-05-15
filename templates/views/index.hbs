@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="icon"href="img/weather.png">
+        <link rel="stylesheet"href="/css/style.css">
+        <title>Weather</title>
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            {{!-- <img src="img/Ahmedabad_City_Map.jpg"> --}}
+
+            <form>
+                <input placeholder="Type Location">
+                <button type="submit">Search</button>
+            </form>
+
+            <p id="mes-1"></p>
+            <p id="mes-2"></p>
+        </div>
+        {{>footer}}
+        <script src="/js/app.js"></script>
+    </body>
+</html>

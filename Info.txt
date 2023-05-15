@@ -1,0 +1,15 @@
+With express
+We can Create Complex HTTP JSON API
+Create Web server (For WebSide)
+
+To serve as BackEnd 
+
+nodemon -e add expension for scanning file that made any changes
+
+like ex  : nodemon .\src\app.js -e hbs,js
+
+This also scan hbs and js file with main node file
+
+* also called wildcard charater
+
+Qurey Start at end of url with ? Sign(format key=Value Pair)
