@@ -83,13 +83,15 @@ app.get('/weather', (req, res) =>{
                 console.log("\n\t***Geocode Detalis***")
                 console.log("\nLocation : ",location.name,"\nLocation_State : ",location.region,"\nLocation_Country : ",location.country,"\nLatitude : ",location.lat,"\nLongitude : ",location.lon)
                 console.log("\n\t***Current forecast Detalis***")
-                console.log("\nweather_descriptions : ",current.weather_descriptions[0],"\ncurrently : ",current.temperature,"\nfeelsLike : ",current.feelslike)
+                console.log("\nweather_descriptions : ",current.weather_descriptions[0],"\ncurrently : ",current.temperature,"\nfeelsLike : ",current.feelslike,"\nHumidity :",current.humidity)
 
                 //Brower (fountEnd Side) Print
                 res.send({
+                    current,
                     forecast: current.weather_descriptions[0],
                     temperature: current.temperature,
                     feelslike: current.feelslike,
+                    humidity: current.humidity,
                     location: location.name+","+location.region+","+location.country,
                     address,
                     unit: req.query.unit
