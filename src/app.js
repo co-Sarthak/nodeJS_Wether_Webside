@@ -16,6 +16,8 @@ const PublicDicPath=path.join(__dirname,'../public')
 const viewsPath=path.join(__dirname,'../templates/views')
 const partialsPath=path.join(__dirname,'../templates/partials')
 // console.log(PublicDicPath);
+// console.log(ViewsPath);
+// console.log(partialsPath);
 
 //Setup handlebar
 app.set('view engine','hbs')
@@ -32,21 +34,21 @@ app.use(express.static(PublicDicPath))
 //With render we can render our hbs handlebar templte
 app.get('', (req, res) =>{
     res.render('index',{
-        title: 'Weather',
+        title: 'वातावरणम्‌',
         name: 'સાર્થક ચારોલા'
     })
 });
 app.get('/about',(req, res)=>{
     res.render('about',{
-        title: 'about',
+        title: 'विषये',
         name: 'સાર્થક ચારોલા'
     })
 });
 app.get('/help',(req, res)=>{
     res.render('help',{
-        title: 'help',
+        title: 'साहाय्यम्‌',
         Company_name: 'ॐ सर्वे भवन्तु सुखिनः',
-        location: 'Bapunager',
+        location: 'तव हृदये',
         name: 'સાર્થક ચારોલા'
     })
 });

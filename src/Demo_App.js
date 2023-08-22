@@ -16,7 +16,7 @@ app.get('/help', (req, res) =>{
         name: "Sarthak",
         Age: 21
     },
-    {   
+    {
         name: "Samrath",
         Age: 21
     }])
