@@ -2,7 +2,7 @@
 
 console.log("Client Side JavaScript Loaded")
 
-//JavaScript 
+//JavaScript
 const wetherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const mess1 = document.querySelector('#mes-1')

@@ -71,7 +71,8 @@ app.get('/weather', (req, res) =>{
     //If No Value is Given Then if condition show error at browser
     if(!req.query.address){
         return res.send({
-            error: 'Provide address to see forecast and geocode'
+            error: 'पूर्वानुमानं भूसङ्केतं च द्रष्टुं पता प्रदातव्यम्'
+            // error: 'Provide address to see forecast and geocode'
         })
     }else{
         address = req.query.address
@@ -105,14 +106,16 @@ app.get('/weather', (req, res) =>{
 app.get('/help/*',(req, res)=>{
     res.render('404_Error',{
         title: 404,
-        textString: "help article Not Found",
+        textString: "साहाय्यम्‌ article न लब्धम्",
+        // textString: "साहाय्यम्‌ article Not Found",
         name: 'સાર્થક ચારોલા'
     })
 });
 app.get('*',(req, res)=>{
     res.render('404_Error',{
         title: '404',
-        textString: "Page Not Found",
+        textString: "पृष्ठं न प्राप्तम्",
+        // textString: "Page Not Found",
         name: 'સાર્થક ચારોલા'
     })
 });
