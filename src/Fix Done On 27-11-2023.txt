@@ -1,0 +1,15 @@
+Fix Done On 27-11-2023
+
+jwt.verify change decord method
+
+change field for upload photo as profile
+
+added urlimage at create user api response
+
+changed database name form test to node_user_task-management at MONGODB_URI in connection string
+
+added resend mail at login api route in login api we need add resend_mail with boolen value true.
+    at website we can add check box or directly send mail if status is false.
+
+
+One More Fix Need To Done Any type of field need to work in postman at form-data

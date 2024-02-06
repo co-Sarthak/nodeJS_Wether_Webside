@@ -1,0 +1,1 @@
+MONGODB_URI=mongodb+srv://charolasarthak2002:TestCz123Cs@cluster0.nerswru.mongodb.net/Users?retryWrites=true&w=majority

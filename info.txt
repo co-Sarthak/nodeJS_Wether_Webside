@@ -1,0 +1,8 @@
+cypto now comes built in with node
+
+bodyParser now deprecated so now use express built in options
+// const bodyParser=require('body-parser');
+
+// below line also bodyParser now deprecated gives error
+// app.use(express.urlencoded({ limit: "200mb" }));
+urlencoded only support raw input doesn't support file sending

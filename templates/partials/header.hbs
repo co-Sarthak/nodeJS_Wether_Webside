@@ -1,0 +1,14 @@
+{{!-- With header we can create navbar --}}
+{{!-- <h1>{{title}}</h1> --}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<header>
+    <a href="/">Home</a>
+    <a href="/user/register">Register</a>
+    <a href="/user/login">Login</a>
+    <div id="updateLinkContainer">
+        {{!-- <a href="/user/verifyotp">Verify</a> --}}
+        <a href="/user/update">Update</a>
+        <a href="/user/list">listuser</a>
+    </div>
+</header>

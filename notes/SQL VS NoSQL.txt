@@ -1,0 +1,14 @@
+mongodb Connect Type or Paste below command
+
+mongod --dbpath .\mongodb-data
+
+SQL(MySql) VS NoSQL(Mongodb)
+
+Table in mongodb as Collection
+
+Row/Record in mongodb as Document
+
+Colume(real diff type of data) in mongodb as Field
+
+UseLess Thing After Compass GUI
+studio 3T Ps : &aRt1H@4k

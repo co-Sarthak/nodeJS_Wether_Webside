@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div className="card">
+        <h4 className="card-header">Patient Satisfaction Survey</h4>
+        <div className="card-body">
+    <form method="post" action="">
+        <div class="mb-3">
+            <label for="PatientName" class="form-label">Patient's name</label>
+            <input type="text" name="" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="PatientFilenumber" class="form-label">Patient's File number (Issued by the hospital)</label>
+            <input type="text" name="" class="form-control">
+        </div>
+        <div className="mb-3">
+            <select required>
+                <option>Orthopedics</option>
+                <option>Cardiology</option>
+                <option>Intensive care medicine</option>
+                <option>Gynaecology</option>
+                <option>Pediatrics</option>
+                <option>Coronary care unit</option>
+            </select>
+        </div>
+        <br>
+        <label>Are you satisfied with overall treatment :</label>
+        <div class="mb-3 form-check">
+            <input type="radio" class="form-check-input" id="overallTreatment" value="Very Satisfied" name="overallTreatment">
+            <label class="form-check-label" for="overallTreatment">Very Satisfied</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="radio" class="form-check-input" id="overallTreatment" value="Satisfied" name="overallTreatment">
+            <label class="form-check-label" for="overallTreatment">Satisfied</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="radio" class="form-check-input" id="overallTreatment" value="Not Satisfied" name="overallTreatment">
+            <label class="form-check-label" for="overallTreatment">Not Satisfied</label>
+        </div>
+
+        <label>Are you satisfied with medical facilities in the hospital :</label>
+        <div class="mb-3 form-check">
+            <input type="radio" class="form-check-input" id="medicalFacilities" value="Very Satisfied" name="medicalFacilities">
+            <label class="form-check-label" for="medicalFacilities">Very Satisfied</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="radio" class="form-check-input" id="medicalFacilities" value="Satisfied" name="medicalFacilities">
+            <label class="form-check-label" for="medicalFacilities">Satisfied</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="radio" class="form-check-input" id="medicalFacilities" value="Not Satisfied" name="medicalFacilities">
+            <label class="form-check-label" for="medicalFacilities">Not Satisfied</label>
+        </div>
+        <div class="mb-3">
+            <label for="OverallComments" class="form-label">Overall Comments</label>
+            <textarea class="form-control" id="OverallComments" rows="3"></textarea>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <!-- <input type="submit"> -->
+        <!-- <input type="reset"> -->
+    </form>
+    </div>
+    </div>
+</body>
+</html>

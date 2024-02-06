@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="img/nodejs.png">
+        <title>Login</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <script src="/js/userlogin.js"></script>
+        {{>header}}
+        <div class="card">
+            <h4 class="card-header">Login User</h4>
+            <div class="card-body">
+                <form id="Userlogin"  method="POST">
+                    <div class="mb-3 form-group">
+                        <label>Email </label>
+                        <input class="form-control" id="email" name="email" type="email" placeholder="Enter Your Email Id" required>
+                    </div>
+                    <div class="mb-3 form-group">
+                        {{!-- pattern="(?=.*[A-Z]).{6,}" --}}
+                        <label>Password</label>
+                        <input class="form-control" id="password" name="password" type="password" placeholder="Enter Your Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        {{>footer}}
+    </body>
+</html>

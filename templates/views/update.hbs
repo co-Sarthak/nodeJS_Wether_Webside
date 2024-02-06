@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Update</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <script src="/js/update.js"></script>
+    {{>header}}
+        <div class="card">
+            <h4 class="card-header">Update User</h4>
+            <div class="card-body">
+
+            <form id="userupdate" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="mb-3 form-group col">
+                        <label>Name</label>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group mb-3 col">
+                        <label>Email </label>
+                        <input class="form-control" type="email" name="email" id="Email" placeholder="Enter Your Email Id">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group mb-3 col">
+                        <label>Date of Birth </label>
+                         {{!-- required --}}
+                        <input class="form-control" name="dob" id="dob" type="date" min="1950-01-01" max="2007-01-01">
+                    </div>
+                    <div class="form-group mb-3 col">
+                        <label>Password</label>
+                         {{!-- required --}}
+                        <input class="form-control" name="password" id="password" type="password" pattern="(?=.*[A-Z]).{6,}"placeholder="Enter Your Password">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 form-group col">
+                        <label>Gender Select : </label><br/>
+                        <input name="gender" type="radio" id="male" value="male"/>
+                        <label for="male">Male</label>
+                        <input name="gender" type="radio" id="female" value="female"/>
+                        <label for="female">Female</label>
+                        <input name="gender" type="radio" id="other" value="other"/>
+                        <label for="other">Other</label>
+                    </div>
+                    <div class="form-group mb-3 col">
+                        <label>Upload Profile-Pic</label>&nbsp;&nbsp;
+                        <input class="form-control-file" id="profile" type="file" name="profileimage"/>
+                        {{!-- <input type="submit" value="Upload"> --}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group mb-3 col">
+                        <label>Select Country</label><br/>
+                         {{!-- required --}}
+                        <select name="countryname" class="form-control" id="countryname">
+                            <option value="Bh">Bharat</option>
+                            <option value="Us">US</option>
+                            <option value="Uk">UK</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-3 col">
+                        <label>Phone No </label>
+                        <input name="phoneno" class="form-control" id="PhoneNo" type="tel" placeholder="Enter Your Phone No">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+        </div>
+    {{>footer}}
+</body>
+</html>

@@ -1,0 +1,82 @@
+{{!-- <div class="main-content"> --}}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="img/nodejs.png">
+        <title>Register</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <script src="/js/register.js"></script>
+        {{>header}}
+            <div class="card">
+                <h4 class="card-header">Register User</h4>
+                <div class="card-body">
+                {{!-- /user/register --}}
+                <form id="userregistor" enctype="multipart/form-data" method="POST">
+                    <div class="mb-3 form-group">
+                        <label>Name :</label>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                        <span id="error-name"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Email :</label>
+                        <input class="form-control" name="email" type="email" id="email" placeholder="Enter Your Email Id" required>
+                    </div>
+                    <div class="mb-3 form-group-md-4">
+                        <label>Date of Birth :</label>
+                        <input class="form-control" name="birthdate" id="birthdate" type="date" min="1950-01-01" max="2007-01-01" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Password :</label>
+                        <input class="form-control" name="password" id="password" type="password" pattern="(?=.*[A-Z]).{6,}"placeholder="Enter Your Password" required>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 form-group col">
+                            <label>Gender : </label><br/>
+                            <input name="gender" type="radio" id="gender" value="male" required/>
+                            <label for="male">Male</label>
+                             {{!-- id="gender"  --}}
+                            <input name="gender" type="radio" value="female"/>
+                            <label for="female">Female</label>
+                            <input name="gender" type="radio" value="other"/>
+                            <label for="other">Other</label>
+                        </div>
+                        {{!-- muter error comming that why commented --}}
+                        <div class="form-group mb-3 col">
+                            <label>Profile Image :</label>&nbsp;&nbsp;
+                            <input class="form-control-file" id="profile" type="file" name="profile" required/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group mb-3 col">
+                            <label>Country :</label><br/>
+                            <select name="countryname" class="form-control" id="countryname" required>
+                                <option value="" selected disabled>Select Country</option>
+                                <option value="Bharat">भारत</option>
+                                <option value="Russia">Россия</option>
+                                <option value="Germany">Deutschland</option>
+                                <option value="Japan">日本</option>
+                                <option value="Israel">ישראל</option>
+                                <option value="SouthKorea">South Korea</option>
+                                <option value="China">中國</option>
+                                <option value="Australia">Australia</option>
+                                <option value="us">United States</option>
+                                <option value="uk">United Kingdom</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-3 col">
+                            <label>Phone No :</label>
+                            <input name="phoneno" class="form-control" id="phoneno" type="tel" placeholder="Enter Your Phone No" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary float-right">Submit</button>
+                </form>
+                </div>
+            </div>
+        {{>footer}}
+    </body>
+</html>
